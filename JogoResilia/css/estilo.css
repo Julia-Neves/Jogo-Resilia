@@ -1,0 +1,44 @@
+body {
+  background-color: darksalmon;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  color: red;
+  font-size: 255%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  width: 55%;
+}
+
+.div-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn {
+  text-align: center;
+  background-color: red;
+  height: 40px;
+  width: 20%;
+
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: 'Dancing Script', cursive;
+}

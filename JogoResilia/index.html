@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/estilo.css">
+    <title>Tente viver neste novo mundo: Jogue!</title>
+</head>
+<body>
+    <strong><h1>O novo mundo com o novo Corona</h1></strong>
+
+    <h2>Estamos no ano de 2020 e um novo vírus super contagioso ameaça toda a humanidade,
+        <p>Milhões de pessoas já foram infectadas por este vírus maléfico que assola a humanidade em pleno século 21.</p>
+        <p>O mesmo se propaga pelo ar.</p>
+        <p>Tendo isto, você terá que ser 
+        forte e tomar decisões a partir de agora, esteja preparado!</p>
+    </h2>
+
+    <div class="div-btn">
+        <button id="btn" onclick="fase()">Start <br> Jogar Novamente</button>
+    </div>
+    
+    <script>
+
+        function fase(){
+
+                var apresentação = prompt("Vamos começar, Primeiro diga seu nome: ");
+
+                alert("Vamos lá " + apresentação + ", Você acorda neste cénario apocalíptico e precisa ir ao mercado, ao sair de casa, o que você faz? Clique em ok para continuar.");
+                var alternativa1 = prompt("Digite 1 para 'Coloco minha máscara de proteção' \n 2 para 'Vou do jeito que estiver'");
+
+                if(alternativa1 == 1){
+                alert("Boa jogada, você foi ao mercado, comprou os alimentos para sua família e conseguiu voltar para casa sem se contaminar. Clique em ok para a próxima etapa.");
+                }
+            
+                else if(alternativa1 == 2){
+                 return alert("Infelizmente você fez uma má escolha, foi contaminado e morreu.");
+                }
+        
+                
+        
+
+                alert("Você e seu irmão precisam levar seu pai ao hospital, pois ele está muito doente, chegando lá, lhes é oferecido álcool para higienizar suas mãos, o que vocês fazem?");   
+                var alternativa2 = prompt("Digite 1 para 'Aceito higienizar minhas mãos com o álcool' \n 2 para 'Digo que está tudo bem e não preciso do álcool'");
+                
+                if(alternativa2 == 1){
+                    alert("Parabéns, você está tomando as devidas precausões para com o vírus e conseguiu sobreviver.");
+                }
+                
+                else if(alternativa2 == 2){
+                 return alert("Sinto muito, você não usou o álcool higienizador e foi infectado, jogo perdido.");
+                }
+                
+            
+            
+        
+
+                alert("Sua mãe decide convidar os netinhos para um almoço em família, o que você faz?");
+                var alternativa3 = prompt("Digite 1 para 'Digo a minha mãe que ainda não é hora para isto e peço para ela adiar este almoço.' \n 2 para 'Peço a minha mãe para aproveitar e fazer meu prato preferido também' ");
+
+                if(alternativa3 == 1){
+                    alert("Boa escolha, você acaba de salvar sua família de serem contaminados e venceu o jogo.");
+                }
+                
+                else if(alternativa3 == 2){
+                    alert("Péssima escolha, com isto toda a sua família foi infectada e você perdeu. FIM DE JOGO");
+                    
+                }
+        }    
+        
+        
+        
+    
+
+    </script>
+</body>
+</html>
