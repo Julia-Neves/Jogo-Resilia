@@ -57,7 +57,6 @@ function perder(){
 }
 
 function primeiraFase(){
-
 	layout("Você acorda neste cénario apocalíptico e precisa ir ao mercado, ao sair de casa, o que você faz?", "Coloca máscara de proteção", "Vai sem máscara mesmo")
 	mostrarBotao();
 	tirarBotao();
@@ -75,10 +74,10 @@ function terceiraFase(){
 	layout("Parabéns, você está tomando as devidas precausões para com o vírus e conseguiu sobreviver. Agora Sua mãe decide convidar os netinhos para um almoço em família, O que você quer fazer?","Pede a sua mãe para aproveitar e fazer seu prato preferido também.", "Dizer para sua mãe que ainda não é hora para isto e pede para ela adiar este almoço");
 	mostrarBotao();
 	tirarBotao();
-	mudarFase(terceiraMalOpcao,quartaFase);
+	mudarFase(terceiraMalOpcao,ganhar);
 }
 
-function quartaFase(){
+function ganhar(){
     texto.textContent = "Boa escolha, você acaba de salvar sua família de serem contaminados e venceu o jogo.";
 	fimDeJogo();
 }
